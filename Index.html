@@ -1,0 +1,258 @@
+<!-- 
+	Created by: Devanshi Patel 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Code - Devanshi Patel</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- favicon -->
+	<link rel='shortcut icon' type='image' href='images/td-favicon.ico' />
+
+	<!-- Bootstrap Css-->
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+	
+	<!-- Font Awesome -->
+	 <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+
+	<!-- Skyforms -->
+	<link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+	<!-- Custom Css-->
+	<link rel="stylesheet" type="text/css" href="css/spacing.css"> <!-- Css for various height spacing  -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">  <!-- Css for web design -->
+
+</head>
+<body>
+	<!-- Header nav bar -->
+	<header class="header-bar ">
+		<!-- Desktop Header-->
+		<div class="desktop-header green-bg">
+			<div class="container">
+				<div class="header-left">
+					<div class="logo">
+						<img src="images/td-logo.png">
+					</div>
+					<h3 class="td-title">TD Insurance</h3>
+					<nav>
+						<ul>
+							<li>Products</li>
+							<li>Claims</li>
+							<li>Contact Us</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-right">
+					<div class="quick-access">
+						<ul>
+							<li class="dropdown">
+								<a href="#" id="province" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ontario
+									<i class="fa fa-angle-down"></i>
+								</a>
+								<ul class="dropdown-content" aria-labelledby="province">
+									<li><a href="#">Alberta</a></li>
+									<li><a href="#">Quebec</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN
+									<i class="fa fa-angle-down"></i>
+								</a>
+								<ul class="dropdown-content" aria-labelledby="language">
+									<li><a href="#">Fr</a></li>
+								</ul>
+							</li>
+							<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+							<li class="login"><a href="#"><i class="fa fa-lock"></i> Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Header (hidden on large devices)-->
+		<div class="mobile-header green-bg">
+			<div class="container">
+				<div class="header-left">
+					<button type="button" class="menu-button"><i class="fa fa-bars fa-2x"></i></button>
+					<div class="logo">
+						<img src="images/td-logo.png">
+					</div>
+					<h3 class="td-title">TD Insurance</h3>
+				</div>
+				<div class="header-right">
+					<div class="quick-access">
+						<ul>
+							<li class="login"><a href="#"><i class="fa fa-lock"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Nav bar -->
+
+	<!-- Container div -->
+	<div class="grey-bg">
+		<div class="container">
+			<div class="spacer40 hidden-sm hidden-xs"></div> <!-- Spacer hidden on small devices-->
+			<div class="row">
+				<div class="col-md-9 col-sm-12">
+					<div class="spacer50 hidden-sm"></div>
+					<div class="title-left">Tell Us About Yourself</div>
+					<p class="description">Thanks for choosing TD Insurance! In order to set uo your new accounts ands services, please tell us about yourself.</p>
+
+					<div class="spacer20 hidden-md hidden-lg"></div>
+					<div class="spacer40 hidden-sm hidden-xs"></div>
+					<div class="title-left">Personal Information</div>
+
+					<!-- Sky Form -->
+					<form class="sky-form">
+						<fieldset>
+							<div class="row">
+								<section class="col-md-3 col-sm-12">
+									<label class="select">
+										<select name="title">
+											<option value="0" selected="selected" disabled="disabled">Title *</option>
+											<option value="1">Mr.</option>
+											<option value="2">Mrs.</option>
+											<option value="3">Miss.</option>
+										</select>
+										<i></i>
+									</label>
+								</section>
+								<section class="col-md-3 col-sm-12">
+									<label class="input">
+										<input type="text" name="firstname" placeholder="First Name *">
+									</label>
+								</section>
+								<section class="col-md-3 col-sm-12">
+									<label class="input">
+										<input type="text" name="middleinitial" placeholder="Middle Initial">
+									</label>
+								</section>
+								<section class="col-md-3 col-sm-12">
+									<label class="input">
+										<input type="text" name="lastname" placeholder="Last Name *">
+									</label>
+								</section>
+							</div>
+
+							<div class="row">
+								<section class="col-md-4 col-sm-12">
+									<label class="input d-flex">
+										<input type="email" name="email" placeholder="Email Address *">
+										<span class="q-icon"><i class="fa fa-question-circle"></i></span> 
+										<!-- Add info message for help-->
+									</label>
+								</section>
+								<section class="col-md-4 col-sm-12">
+									<label class="input">
+										<input type="text" name="DOB" placeholder="Date of Birth *">
+									</label>
+								</section>
+								<section class="col-md-4 col-sm-12">
+									<label class="input d-flex">
+										<input type="text" name="SIN" placeholder="Social Insurance Number *">
+										<span class="q-icon"><i class="fa fa-question-circle"></i></span>
+										<!-- Add info message for help-->
+									</label>
+								</section>
+							</div>
+						</fieldset>
+						<footer>
+							<button type="submit" class="button btn-submit">Submit</button>
+							<button type="button" class="button btn-cancel">Cancel</button>
+						</footer>
+					</form>
+					<!-- Sky Form End-->
+				</div>
+
+				<!-- Right sidebar -->
+				<div class="col-md-3 col-sm-12">
+					<div class="spacer40 hidden-md hidden-lg"></div>
+					<div class="title-right">You are applying for</div>
+					<div class="sub-title-right">TD <sup><i class="fa fa-registered font14"></i></sup> Travel Medical Insurance</div>
+					<div class="spacer30"></div>
+					<button type="submit" class="button btn-green-right">See More Coverage Options</button>
+				</div>
+			</div>
+			<div class="spacer20"></div>
+		</div>	
+	</div>
+	<!-- End Container  -->
+
+	<!-- Footer -->
+	<footer class="green-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-content" style="background-image: url('images/footer_seat.png');">
+					<p class="footer-heading"> Need to talk to us directly? 
+						<a href="#" class="footer-link">Contact Us <i class="fa fa-chevron-right"></i></a>
+					</p>
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
+						<hr class="green-hr" />
+					</div>
+					<div class="footer-copy-links col-md-6 col-sm-12">
+						<a href="#">Privacy & Security</a>
+						<a href="#">Legal</a>
+						<a href="#">Accessibility</a>
+						<a href="#">About Us</a>
+						<a href="#">Careers</a>
+					</div>
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
+						<hr class="green-hr" />
+					</div>
+					<div class="footer-copy-links col-md-6 col-sm-12">
+						<ul>
+							<li>
+								<a href="#">
+									<div class="td-social-icon td-circle">
+										<i class="fa fa-facebook"></i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="td-social-icon td-circle">
+										<i class="fa fa-twitter"></i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="td-social-icon td-circle">
+										<i class="fa fa-youtube"></i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="td-social-icon td-circle">
+										<i class="fa fa-rss"></i>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="spacer20 hidden-lg hidden-md"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+	
+	<!-- Javascripts-->
+	<!-- Jquery -->
+	<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+
+	<!-- Bootstrap JS-->
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
